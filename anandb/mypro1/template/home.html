@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+    <h1>HOME</h1>
+    <p>welcome</p>
+    <img src="{% static 'images/aot.jpg' %}">
+    <table>
+        {% for i in t %}
+        <tr>
+            <td>{{i.rollno}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.place}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'form1'%}">form</a>
+    <a href="{% url 'form2'%}">Add</a>
+    
+</body>
+</html>
