@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+#myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      transform: scale(1.4);
+}
+main{
+    height: 100svh;
+    width: 100vw ;
+    margin: 0%;
+     /* background: url(./avengers.jpg);  */
+    /* background-size: cover; */
+
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 100;
+    height: 100%;
+    width: 13%;
+    z-index: 3;
+    background-color: #111111dd;
+    transition: 0.25s;
+    box-shadow: 15px 0 100px 100px #111111dd;
+}
+.nav-bar:hover{
+    box-shadow: 30px 0 150px 150px #111111dd;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 2rem;
+}
+.nav-item{
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    transform: 0.3s;
+    padding-block: 1rem;
+    text-align: center;
+}
+.icons:hover > .nav-item::after{
+    color: white;
+    transform: translateX(0%);
+}
+.nav-item::after{
+    content: attr(name);
+    position: absolute;
+    text-align: left;
+    transition: 0.5s;
+    padding-left: 2rem;
+    width: 16rem;
+    height: 100%;
+    color: #fff0;
+    transform: translateX(-25%);
+}
+.nav-item:hover{
+    transform: scale(1.2);
+    font-weight: bolder;
+}
+.logo{
+    padding-left: 1rem;
+    position: absolute;
+    top: 3%;
+}
+.scrl{
+    bottom: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    padding-top: 70vh;
+    z-index: 0;
+    overflow-x: scroll;
+    /* padding-left: 3rem; */
+    margin-left: 8rem;
+    
+}
+.scrl-item{
+    height: 30vh;
+    float: left;
+    padding-right: 10px;
+    
+
+}
+.scrl-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    padding-block: 1rem; 
+    border-radius: 10%;
+
+}
+.text{
+    position: absolute;
+    width: 60%;
+
+    color: white;
+    top: 20%;
+}
+.scroll{
+    position: relative;
+    height: 30vh;
+    width: 200vw;
+    background: linear-gradient(transparent, black);
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.scroll2{
+    position: relative;
+    height: 30vh;
+    width: 200vw;
+    background-color: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.scrl-item:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    
+}

@@ -1,0 +1,191 @@
+html,body{
+    margin: 0%;
+}
+main{
+    height: 100svh;
+    width: 100vw;
+}
+.nav-bar{
+    width: 100vw;
+    height: 5vh;
+    background-color: darkblue;
+    display: flex;
+    
+}
+.m{
+    color: white;
+    display: flex;
+    align-items: center; 
+}
+.nav-bar1{
+    display: flex;
+    justify-content: space-between; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 55px;
+    background-color: black;
+  
+
+}
+.options{
+    display: flex;
+    color: white;
+    margin-right: 200px;   
+}
+.logos{
+    margin-left: 6rem;
+}
+.o:hover{
+  color: yellow;
+}
+.d-flex{
+    margin-right: 16rem;
+}
+.options p{
+    margin-right: 2rem;
+}
+.logo{
+    height: 55px;
+    width: 75px;
+}
+.nav-bar2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    /* background-color: aqua; */
+    align-items: center ;
+    justify-content: space-between;
+}
+.logo2{
+    height: 60px;
+    width: 140px;
+    padding-left: 6rem;
+}
+.spans{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    padding: 20px;
+    font-size: 15px;
+}
+.a:hover{
+    text-decoration-line: underline;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.popupmen{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 100%px;
+    width: 100%;
+    padding-left: 6rem;
+}
+.pmen:hover ~ .popupmen{
+    display: flex;
+}
+.popupwomen{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 100%px;
+    width: 100%;
+    padding-left: 6rem;
+}
+.pwomen:hover ~ .popupwomen{
+    display: flex;
+}
+.popupboys{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 100%px;
+    width: 100%;
+    padding-left: 6rem;
+}
+.pboys:hover ~ .popupboys{
+    display: flex;
+}
+.popupgirls{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 100%px;
+    width: 100%;
+    padding-left: 6rem;
+}
+.pgirls:hover ~ .popupgirls{
+    display: flex;
+}
+.popupnew{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+}
+.popupnew img{
+    height: 250px;
+    width: 300px;
+}
+.popupnew div{
+    margin-right: 20px;
+    text-decoration: underline red;
+}
+.pnew:hover ~ .popupnew{
+    display: flex;
+    justify-content: center;
+
+}
+.image{
+    display: flex;
+
+}
+.popupspecial{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 450px;
+    width: 100%;
+    padding-left: 6rem;
+}
+.pspecial:hover ~ .popupspecial{
+    display: flex;
+}
+.popupsale{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    display: none;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+}
+.psale:hover ~ .popupsale{
+    display: flex;
+    justify-content: center;
+
+}
+.popupsale div{
+    margin-right: 20px;
+    text-decoration: underline red;
+}
+.circleimg{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
