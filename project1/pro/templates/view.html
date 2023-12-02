@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body_block %}
+ 
+    <table>
+        {% for i in book %}
+        <tr>
+            <td>{{i.title}}</td>
+            <td>{{i.author}}</td>
+            <td><img src="{{i.image}}" alt=""></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endblock %}
+  
+
+</body>
+</html>
